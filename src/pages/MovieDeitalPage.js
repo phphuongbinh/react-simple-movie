@@ -10,7 +10,16 @@ const MovieDeitalPage = () => {
     fetcher
   );
   console.log(data);
-  return <div>MovieDeitalPage</div>;
+  return (
+    <>
+      <div
+        className="w-full h-screen bg-no-repeat bg-cover"
+        style={{
+          backgroundImage: `url(https://image.tmdb.org/t/p/original/${data.backdrop_path})`,
+        }}
+      ></div>
+    </>
+  );
 };
 
 export default MovieDeitalPage;

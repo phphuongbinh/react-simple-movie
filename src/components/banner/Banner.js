@@ -25,7 +25,6 @@ const Banner = () => {
 
 function BannerItem({ item }) {
   const { title, backdrop_path } = item;
-  console.log(item);
   return (
     <div className="relative w-full h-full rounded-lg">
       <div className="overlay absolute inset-0 bg-gradient-to-t from-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.2)] rounded-lg "></div>
